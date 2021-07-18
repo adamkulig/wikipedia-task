@@ -23,7 +23,6 @@ function App() {
         title: result.title,
         snippet: result.snippet,
       }));
-      console.log(desiredResults);
       setResults(desiredResults);
     } catch {
       setResults([]);
@@ -61,7 +60,6 @@ function App() {
     setResults(modifiedResults);
   };
 
-  console.log(results);
   return (
     <div className="App">
       <Title level={3}>Wikipedia Searcher</Title>
